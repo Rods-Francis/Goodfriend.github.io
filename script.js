@@ -21,3 +21,12 @@ window.addEventListener('scroll', () => {
     // Update the last scroll position
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Prevent negative scroll
 });
+
+// Select the menu toggle button and the navigation menu
+const menuToggle = document.getElementById('menu-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+// Add click event to toggle the menu visibility
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show'); // Toggle the "show" class
+});
