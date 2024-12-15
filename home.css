@@ -515,11 +515,11 @@ color: #fd0002;
 
   @media (max-width: ){
     header .toptext{
-      font-size: 1.5rem;
+      font-size: 1.6rem;
 
     }
     section nav ul li a{
-      font-size: 10px;
+      font-size: 12px;
       
     }
 
