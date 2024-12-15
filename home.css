@@ -80,22 +80,78 @@ section nav .logo img{
 
 }
 
-section nav ul{
-  list-style: none;
+/* General styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
 }
 
-section nav ul li{
-  display: inline-block;
-  margin: 0 15px;
-
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
-section nav ul li a{
 
-  text-decoration: none;
-  color:black;
-  font-weight: 500;
-  font-size: 17px;
+nav ul li {
+    margin: 0 10px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f90;
+}
+
+/* Mobile menu hidden by default */
+#nav-menu {
+    display: none; /* Hidden on mobile */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+#nav-menu.show {
+    display: flex; /* Show the menu when toggled */
+}
+
+/* Button styling */
+#menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+    #menu-toggle {
+        display: none; /* Hide toggle button on larger screens */
+    }
+
+    #nav-menu {
+        display: flex; /* Show the menu by default on larger screens */
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+    }
+}
+
+
 
 section nav ul li a::after{
   content: '';
