@@ -193,7 +193,7 @@ section nav ul li a:hover{
   animation: rotate 12s linear infinite;
   margin: 0 auto;
 }
-/*
+
 @keyframes rotate {
   0%{
       transform: rotate(0deg);
@@ -201,7 +201,7 @@ section nav ul li a:hover{
   100%{
       transform: rotate(360deg);
   }
-}*/
+}
 
  .second p{
   font-size: 18px;
@@ -512,5 +512,17 @@ width:45%;
 color: #fd0002;
 
 }
+
+  @media (max-width: ){
+    header .toptext{
+      font-size: 1.5rem;
+
+    }
+    section nav ul li a{
+      font-size: 10px;
+      
+    }
+
+  }
 
 
