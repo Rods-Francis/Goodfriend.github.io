@@ -513,7 +513,7 @@ color: #fd0002;
 
 }
 
-  @media (max-width: ){
+  @media (max-width:1080 ){
     header .toptext{
       font-size: 1.6rem;
 
