@@ -139,7 +139,7 @@ section nav ul li a:hover{
   justify-items: center;
 }
 
-@media(min-aspect-ratio: 16/9){
+@media(max-width:1080px){
   .montage video{
       width: 100%;
       height: auto;
@@ -513,7 +513,7 @@ color: #fd0002;
 
 }
 
-  @media (max-width:1080 ){
+  @media (max-width:1080px){
     header .toptext{
       font-size: 1.6rem;
 
