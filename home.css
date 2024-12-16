@@ -260,7 +260,7 @@ header {
 .montage_text{
 
 @media(max-width:1080px){
-  .montage video{
+  .video-section video{
       width: 100%;
       height: auto;
   }
